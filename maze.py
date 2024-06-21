@@ -6,7 +6,7 @@ class Node():
         self.parent = parent
         self.action = action
 
-
+#This class implements DFS, using a stack structure
 class StackFrontier():
     def __init__(self):
         self.frontier = []
@@ -28,6 +28,7 @@ class StackFrontier():
             self.frontier = self.frontier[:-1]
             return node
 
+#This class implements BFS, using a queue structure
 
 class QueueFrontier(StackFrontier):
 
